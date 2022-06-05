@@ -9,6 +9,10 @@ add_executable(${PROJECT_NAME} main.cpp LeetCode2Solution.cpp LeetCode2Solution.
 
 
 add_subdirectory(search_in_a_roated_sorted_array)
+add_subdirectory(container_with_most_water)
+add_subdirectory(3sum)
+add_subdirectory(LongestPalindromicSubstring)
+add_subdirectory(ClimbingStairs)
 
 Include(FetchContent)
 

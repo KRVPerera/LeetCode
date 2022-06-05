@@ -1,10 +1,15 @@
 #include <iostream>
 #include "LeetCode2Solution.h"
 
+using namespace std; // not production
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
-    LeetCode2Solution sc;
-    sc.lengthOfLongestSubstring("abcabcbb");
+
+    for (int parity: {0, 1}) {
+        cout << parity << endl;
+    }
+
     return 0;
 }
