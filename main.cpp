@@ -1,5 +1,4 @@
 #include <iostream>
-#include "LeetCode2Solution.h"
 
 using namespace std; // not production
 

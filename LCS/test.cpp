@@ -3,10 +3,13 @@
 //
 
 #include <catch2/catch_test_macros.hpp>
-#include "LeetCode2Solution.h"
+#include "Solution.cpp"
+
+using namespace std;
 
 TEST_CASE( "LCS Length", "[LCS]" ) {
-    LeetCode2Solution sc;
+    Solution sc;
+    REQUIRE( sc.lengthOfLongestSubstring("abab") == 2 );
     REQUIRE( sc.lengthOfLongestSubstring("abcabcbb") == 3 );
     REQUIRE( sc.lengthOfLongestSubstring("babad") == 3 );
     REQUIRE( sc.lengthOfLongestSubstring("pwwkew") == 3 );

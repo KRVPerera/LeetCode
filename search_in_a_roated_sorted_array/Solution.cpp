@@ -1,14 +1,8 @@
 #include "Solution.h"
-#include<iostream>
 #include<vector>
 #include<algorithm>
-#include<cassert>
-
-#define DEBUG 1
 
 using namespace std;
-
-// [4,5,6,7,8,9,0,1,2]
 
 int Solution::getMid(int left, int right) {
     return left + (right-left)/2;
@@ -16,9 +10,7 @@ int Solution::getMid(int left, int right) {
 
 int Solution::findPivot(vector<int>& nums) {
     ArraySegment arrSeg {0, nums.size()-1};
-    // int findPivotCount = 0;
     while (true) {
-        // cout << "findPivotCount : " << findPivotCount++ << endl; 
         int left = arrSeg.left;
         int right = arrSeg.right;
         int mid = arrSeg.getMid();
@@ -58,11 +50,6 @@ int Solution::search(vector<int>& nums, int target) {
 
     if (nums.empty()) return -1;
     size_t pivot = findPivot(nums);
-    //cout << "pivot : " << pivot << " target : " << target << endl; 
-    //for (auto num : nums) {
-    //    cout << num << " ";
-    //}
-    //cout << endl;
 
     if (nums[pivot] < target) return -1;
     if (nums[pivot] == target) return pivot;

@@ -5,7 +5,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 
 set(CMAKE_CXX_STANDARD 14)
-add_executable(${PROJECT_NAME} main.cpp LeetCode2Solution.cpp LeetCode2Solution.h)
+add_executable(${PROJECT_NAME} main.cpp)
 
 
 add_subdirectory(search_in_a_roated_sorted_array)
@@ -14,6 +14,7 @@ add_subdirectory(3sum)
 add_subdirectory(LongestPalindromicSubstring)
 add_subdirectory(ClimbingStairs)
 add_subdirectory(mergeTwoSortedLists)
+add_subdirectory(LCS)
 
 Include(FetchContent)
 
@@ -24,6 +25,3 @@ FetchContent_Declare(
 )
 
 FetchContent_MakeAvailable(Catch2)
-
-add_executable(testsLCS TestLCS_2.cpp LeetCode2Solution.cpp LeetCode2Solution.h)
-target_link_libraries(testsLCS PRIVATE Catch2::Catch2WithMain)
