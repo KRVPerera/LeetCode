@@ -13,6 +13,7 @@ add_subdirectory(container_with_most_water)
 add_subdirectory(3sum)
 add_subdirectory(LongestPalindromicSubstring)
 add_subdirectory(ClimbingStairs)
+add_subdirectory(mergeTwoSortedLists)
 
 Include(FetchContent)
 
