@@ -15,6 +15,7 @@ add_subdirectory(LongestPalindromicSubstring)
 add_subdirectory(ClimbingStairs)
 add_subdirectory(mergeTwoSortedLists)
 add_subdirectory(LCS)
+add_subdirectory(slidingMax)
 
 Include(FetchContent)
 
