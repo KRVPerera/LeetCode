@@ -1,6 +1,6 @@
-project(container_with_most_water)
+project(ValidateSubsequence)
 
-set(SOURCE_FILES test.cpp Solution.cpp Solution.h)
+set(SOURCE_FILES Solution.cpp)
 
 include_directories("${PROJECT_BINARY_DIR}")
 include_directories("${PROJECT_SOURCE_DIR}/include")
