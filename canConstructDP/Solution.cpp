@@ -7,7 +7,7 @@
 
 using namespace std;
 
-bool canConstructHelper(string st, vector<string>& stringArray, unordered_map<string, bool>& mem) {
+bool canConstructHelper(string& st, vector<string>& stringArray, unordered_map<string, bool>& mem) {
     if (st.empty()) {
         return true;
     }

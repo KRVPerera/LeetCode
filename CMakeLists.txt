@@ -19,6 +19,7 @@ add_subdirectory(slidingMax)
 add_subdirectory(ValidateSubsequence)
 add_subdirectory(Nonc)
 add_subdirectory(canConstructDP)
+add_subdirectory(SortingAlgorithms)
 
 Include(FetchContent)
 
