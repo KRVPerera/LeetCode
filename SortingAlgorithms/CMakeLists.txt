@@ -1,6 +1,6 @@
 project(SortingAlgorithms)
 
-set(SOURCE_FILES Solution.cpp)
+set(SOURCE_FILES Solution.cpp src/mergesort.cpp include/mergesort.h include/insertionsort.h src/insertionsort.cpp src/bubblesort.cpp)
 
 include_directories("${PROJECT_BINARY_DIR}")
 include_directories("${PROJECT_SOURCE_DIR}/include")
