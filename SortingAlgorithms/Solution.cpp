@@ -55,27 +55,43 @@ TEST_CASE("bubbleSort", "[Sort Array]") {
     bubbleSort(unsortedVec);
     REQUIRE(sortedVec == unsortedVec);
 }
+//
+//TEST_CASE("max-heapify 1", "[8, 1, 5]") {
+//    std::vector<int> heapified({8, 1, 5});
+//    std::vector<int> unsortedVec({5, 1, 8});
+//    Heap heap(unsortedVec);
+//    heap.maxHeapify(0);
+//    REQUIRE(heapified == unsortedVec);
+//}
+//
+//TEST_CASE("Max-Heapify(A, 2)", "[16, 4, 10, 14, 7, 9, 3, 2, 8, 1]") {
+//    std::vector<int> heapified({16, 14, 10, 8, 7, 9, 3, 2, 4, 1});
+//    std::vector<int> unsortedVec({16, 4, 10, 14, 7, 9, 3, 2, 8, 1});
+//    Heap heap(unsortedVec);
+//    heap.maxHeapify(1);
+//    REQUIRE(heapified == unsortedVec);
+//}
+//
+//TEST_CASE("max-heapify-sort 3", "[7, 8, 3, 11, 43, 55]") {
+//    std::vector<int> heapified({3, 7, 8, 11, 43, 55});
+//    std::vector<int> unsortedVec({7, 8, 3, 11, 43, 55});
+//    Heap heap(unsortedVec);
+//    heap.sort();
+//    REQUIRE(heapified == unsortedVec);
+//}
+//
+//TEST_CASE("max-heapify-sort k 3", "[7, 8, 3, 11, 43, 55]") {
+//    std::vector<int> heapified({3, 7, 8, 11, 43, 55});
+//    std::vector<int> unsortedVec({7, 8, 3, 11, 43, 55});
+//    Heap heap(unsortedVec);
+//    heap.sort(2);
+//    REQUIRE(heapified == unsortedVec);
+//}
 
-TEST_CASE("max-heapify 1", "[8, 1, 5]") {
-    std::vector<int> heapified({8, 1, 5});
-    std::vector<int> unsortedVec({5, 1, 8});
+TEST_CASE("max-heapify-sort k 3", "[55, 7, 8]") {
+    std::vector<int> heapified({7, 8, 55});
+    std::vector<int> unsortedVec({55, 7, 8});
     Heap heap(unsortedVec);
-    heap.maxHeapify(0);
-    REQUIRE(heapified == unsortedVec);
-}
-
-TEST_CASE("Max-Heapify(A, 2)", "[16, 4, 10, 14, 7, 9, 3, 2, 8, 1]") {
-    std::vector<int> heapified({16, 14, 10, 8, 7, 9, 3, 2, 4, 1});
-    std::vector<int> unsortedVec({16, 4, 10, 14, 7, 9, 3, 2, 8, 1});
-    Heap heap(unsortedVec);
-    heap.maxHeapify(1);
-    REQUIRE(heapified == unsortedVec);
-}
-
-TEST_CASE("max-heapify-sort 3", "[7, 8, 3, 11, 43, 55]") {
-    std::vector<int> heapified({3, 7, 8, 11, 43, 55});
-    std::vector<int> unsortedVec({7, 8, 3, 11, 43, 55});
-    Heap heap(unsortedVec);
-    heap.sort();
+    heap.sort(2);
     REQUIRE(heapified == unsortedVec);
 }

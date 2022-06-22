@@ -24,6 +24,7 @@ public:
     Heap(vector<int> &vec);
     void buildMaxHeap(int);
     void sort();
+    void sort(int);
 };
 
 #endif //INC_75MUSTDOLEETCODE_HEAP_H

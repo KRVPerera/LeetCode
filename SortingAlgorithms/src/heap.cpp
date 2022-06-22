@@ -43,3 +43,12 @@ void Heap::sort() {
         maxHeapify(0);
     }
 }
+
+void Heap::sort(int n) {
+    buildMaxHeap(array.size() - 1);
+    for (int i = n + 1; i > 0; i--) {
+        swap(array[0], array[i]);
+        heapSize--;
+        maxHeapify(0);
+    }
+}

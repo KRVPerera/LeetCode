@@ -20,6 +20,7 @@ add_subdirectory(ValidateSubsequence)
 add_subdirectory(Nonc)
 add_subdirectory(canConstructDP)
 add_subdirectory(SortingAlgorithms)
+add_subdirectory(MoveToEnd)
 
 Include(FetchContent)
 
